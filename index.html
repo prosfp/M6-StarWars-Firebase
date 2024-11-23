@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pool de Personatges</title>
+    <script src="./src/script.js" type="module" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <div class="container mx-auto p-4">
+      <h1 class="text-3xl font-bold mb-6">Pool de Personatges de Star Wars</h1>
+      <form id="login-form">
+        <input
+          type="email"
+          id="email"
+          placeholder="Correu electrònic"
+          required
+        />
+        <input
+          type="password"
+          id="password"
+          placeholder="Contrasenya"
+          required
+        />
+        <button type="submit">Inicia sessió</button>
+      </form>
+      <h2 class="text-2xl font-semibold my-8">Afegir Personatge</h2>
+      <form id="add-character-form" class="mt-4 space-y-4">
+        <input
+          type="text"
+          id="name"
+          placeholder="Nom"
+          class="w-full p-2 border rounded"
+          required
+        />
+        <input
+          type="number"
+          id="height"
+          placeholder="Alçada"
+          class="w-full p-2 border rounded"
+          required
+        />
+        <input
+          type="number"
+          id="mass"
+          placeholder="Pes"
+          class="w-full p-2 border rounded"
+          required
+        />
+        <button
+          type="submit"
+          class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+        >
+          Afegir
+        </button>
+        <hr class="my-4" />
+      </form>
+      <div id="characters-container" class="space-y-4"></div>
+    </div>
+  </body>
+</html>

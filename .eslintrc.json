@@ -1,0 +1,19 @@
+{
+  "extends": ["eslint:recommended", "plugin:jest/recommended"],
+  "env": {
+    "browser": true,
+    "es2021": true, // Update to the latest ECMAScript version
+    "node": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2021, // Ensure compatibility with ES2021
+    "sourceType": "module"
+  },
+  "plugins": ["jest"],
+  "rules": {
+    "semi": ["error", "always"],
+    "indent": ["error", 2],
+    "no-console": "off"
+  }
+}
